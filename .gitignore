@@ -1,0 +1,15 @@
+# Java / Maven
+backend/target/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+
+# Local database configuration / secrets
+.env
+*.properties

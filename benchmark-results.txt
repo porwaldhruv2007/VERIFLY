@@ -1,0 +1,2 @@
+Servlet 10 requests: 0.212s
+CGI 10 requests: 0.989s

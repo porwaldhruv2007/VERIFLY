@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Verify a Badge — VERIFLY</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+  </head>
+  <body class="public-body">
+    <header class="public-nav">
+      <a class="logo" href="index.html"><i class="logo-mark">✓</i>VERIFLY</a>
+      <nav class="public-links">
+        <a href="index.html">Home</a
+        ><a href="student/login.html" class="btn btn-light btn-small"
+          >Student Login</a
+        ><a href="admin/login.html" class="btn btn-primary btn-small"
+          >Admin Login</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="verify-hero">
+        <div class="eyebrow" style="color: #76e8ed">
+          Credential verification
+        </div>
+        <h1>Verify a Digital Badge</h1>
+        <p>Enter the credential code to check its authenticity.</p>
+      </section>
+      <section class="verify-box">
+        <div class="notice">
+          Enter a verification code to verify the credential against the VERIFLY
+          database.
+        </div>
+        <form id="verify-form">
+          <label class="hidden" for="verify-code">Enter verification code</label
+          ><input
+            class="input mono"
+            id="verify-code"
+            placeholder="Enter verification code"
+            value="WX-SRV-8A29K"
+            required
+          /><button class="btn btn-primary">Verify Badge</button>
+        </form>
+        <small style="display: block; color: var(--muted); margin-top: 10px"
+          >Try: <span class="mono">WX-SRV-8A29K</span></small
+        >
+      </section>
+      <section id="verify-result" class="verify-result"></section>
+    </main>
+    <footer class="public-footer">
+      VERIFLY · Verification is mock frontend behaviour in Phase 1.
+    </footer>
+    <script src="js/mockData.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/verification.js"></script>
+  </body>
+</html>
